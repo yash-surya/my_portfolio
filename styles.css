@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #08111f;
+    color: #fff;
+    line-height: 1.6
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background: #0c1728;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100
+}
+
+.logo {
+    font-weight: bold;
+    color: #00e5ff
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px
+}
+
+section {
+    padding: 90px 8%
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center
+}
+
+.hero-content h1 {
+    font-size: 4rem
+}
+
+.hero-content h2 {
+    color: #00e5ff;
+    margin: 10px 0
+}
+
+.hero-content p {
+    max-width: 700px
+}
+
+.buttons {
+    margin-top: 25px
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #00e5ff;
+    color: #08111f;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-right: 10px
+}
+
+.secondary {
+    background: transparent;
+    border: 2px solid #00e5ff;
+    color: #00e5ff
+}
+
+h2 {
+    text-align: center;
+    color: #00e5ff;
+    margin-bottom: 30px
+}
+
+.card {
+    background: #12233b;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center
+}
+
+.tags span {
+    background: #00e5ff;
+    color: #08111f;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-weight: bold
+}
+
+@media(max-width:768px) {
+    .header {
+        flex-direction: column;
+        gap: 10px
+    }
+
+    nav a {
+        margin: 0 8px
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem
+    }
+}
+
+.contact-link {
+    color: #00e5ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.project-card h3{
+    color:#00e5ff;
+    font-size:1.4rem;
+    margin-bottom:15px;
+}
+
+.project-card p{
+    color:#d1d5db;
+    line-height:1.7;
+}
+.project-card{
+    transition:all .3s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    border:1px solid #00e5ff;
+    box-shadow:0 0 20px rgba(0,229,255,.4);
+}
